@@ -1,0 +1,68 @@
+.formTitle {
+    font-size: 1rem;
+    color: #486581;
+    font-weight: 500;
+}
+
+.checkmarkContainer {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.checkmarkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #DCEEFB;
+    border-radius: 50%;
+}
+
+
+.checkmarkContainer:hover input ~ .checkmark {
+    background-color: #B6E0FE;
+}
+
+.checkmarkContainer input:checked ~ .checkmark {
+    background-color: #0F609B;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkmarkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkmarkContainer .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #DCEEFB;
+}
+
+.form select {
+    display: block;
+}

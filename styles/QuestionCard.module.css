@@ -1,0 +1,35 @@
+.container {
+    width: 85%;
+}
+
+.questionCounter {
+    color: #627D98;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.question button {
+    width: 100%;
+    font-family: inherit;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 0.6rem;
+    background-color: #F0F4F8;
+    border: 1px solid #F0F4F8;
+    cursor: pointer;
+}
+
+.question button:hover {
+    border: 1px solid #84C5F4;
+}
+
+.valid {
+    border: 1px solid  #17B897 !important;
+    color: #17B897 !important;
+}
+
+.invalid {
+    border: 1px solid #F29B9B !important;
+    color: #FACDCD !important;
+}
